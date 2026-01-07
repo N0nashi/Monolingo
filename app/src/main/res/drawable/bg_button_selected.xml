@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Тень (голубая) -->
+    <item android:bottom="0dp" android:top="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <solid android:color="#2980B9"/>
+        </shape>
+    </item>
+    <!-- Верх (светло-голубой) -->
+    <item android:bottom="4dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <solid android:color="#D6EAF8"/>
+            <stroke android:width="2dp" android:color="#3498DB"/> <!-- Обводка -->
+        </shape>
+    </item>
+</layer-list>

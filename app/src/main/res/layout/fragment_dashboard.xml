@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E272E"> <!-- Темный фон -->
+
+    <!-- ================== ЭКРАН 1: СПИСОК НАБОРОВ ================== -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/layout_sets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="64dp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мои наборы"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_sets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="80dp"
+                android:clipToPadding="false"
+                tools:listitem="@layout/item_card_set"/>
+        </LinearLayout>
+
+        <!-- Кнопка "Создать набор" -->
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_create_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="24dp"
+            android:text="Новый набор"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2ECC71"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconTint="#FFFFFF"
+            android:elevation="6dp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!-- ================== ЭКРАН 2: ИЗУЧЕНИЕ ================== -->
+    <LinearLayout
+        android:id="@+id/layout_study"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:background="#1E272E"
+        android:padding="24dp"
+        android:paddingTop="80dp"> <!-- Большой отступ сверху -->
+
+        <!-- Навигация -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+            <ImageButton
+                android:id="@+id/btn_back_to_sets"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="#BDC3C7"/>
+
+            <TextView
+                android:id="@+id/tv_set_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Название набора"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginHorizontal="8dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_edit_set"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="#BDC3C7"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <!-- Карточка -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_word"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#2C3E50">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/tv_front_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Word"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="Нажми, чтобы перевернуть"
+                    android:textColor="#7F8C8D"
+                    android:textSize="12sp"/>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Кнопки действий -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_known"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="64dp"
+                android:text="Знаю"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#27AE60"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="16dp"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="64dp"
+                android:text="Не знаю"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E74C3C"
+                android:layout_marginStart="8dp"
+                app:cornerRadius="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ================== ЭКРАН 3: РЕДАКТОР ================== -->
+    <LinearLayout
+        android:id="@+id/layout_create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#1E272E"
+        android:visibility="gone"
+        android:paddingTop="48dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="#2C3E50"
+            android:elevation="4dp">
+
+            <ImageButton
+                android:id="@+id/btn_cancel_create"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tv_create_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Новый набор"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"/>
+
+            <Button
+                android:id="@+id/btn_save_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сохранить"
+                android:textColor="#2C3E50"
+                android:backgroundTint="#FFD700"
+                app:cornerRadius="20dp"
+                android:minHeight="40dp"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_view_create"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="100dp">
+
+                <!-- Поле названия с исправленным стилем -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:hint="Название набора"
+                    app:hintTextColor="#FFD700"
+                    app:boxStrokeColor="#FFD700"
+                    app:boxStrokeWidth="2dp"
+                    android:textColorHint="#90FFFFFF"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="#FFFFFF"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_set_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:padding="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_pairs_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+                <!-- Кнопка "Добавить слово" внизу списка -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add_pair"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="24dp"
+                    android:text="+ Добавить слово"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#3498DB"
+                    app:cornerRadius="12dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

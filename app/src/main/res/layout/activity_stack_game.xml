@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3E50">
+
+    <!-- 1. Игровое поле -->
+    <com.example.individ_project.StackGameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 2. UI во время игры -->
+    <!-- Текущий счет -->
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="80dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="64sp"
+        android:fontFamily="sans-serif-light"
+        android:elevation="10dp"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="8"/>
+
+    <!-- Кнопка закрытия (Опустили ниже, чтобы не наезжала на статус бар) -->
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:tint="#FFFFFF"
+        android:elevation="10dp"/>
+
+    <!-- 3. СОВРЕМЕННОЕ УВЕДОМЛЕНИЕ (PILL STYLE) -->
+    <!-- Контейнер с фоном-капсулой, иконкой и текстом -->
+    <LinearLayout
+        android:id="@+id/layout_xp_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_xp_pill"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:elevation="20dp"
+        android:visibility="invisible"> <!-- Скрыто по умолчанию -->
+
+        <!-- Иконка звезды (или трофея) -->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/btn_star_big_on"
+            android:tint="#FFD700"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Текст уведомления -->
+        <TextView
+            android:id="@+id/tv_xp_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+15 XP"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05"/>
+
+    </LinearLayout>
+
+    <!-- 4. Экран проигрыша -->
+    <LinearLayout
+        android:id="@+id/layout_game_over"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="32dp"
+        android:elevation="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="РЕЗУЛЬТАТ"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:letterSpacing="0.15"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/tv_game_over_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="42"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:id="@+id/tv_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BEST: 155"
+            android:textColor="#FFD700"
+            android:textSize="18sp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/bg_best_score_pill"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"/>
+
+        <Button
+            android:id="@+id/btn_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Играть снова"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="48dp"
+            android:paddingVertical="14dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

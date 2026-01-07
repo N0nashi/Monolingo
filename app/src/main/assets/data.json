@@ -1,0 +1,827 @@
+[
+  {
+    "id": 1,
+    "title": "Еда (Food)",
+    "description": "Базовые слова про еду",
+    "questions": [
+      {
+        "type": "word",
+        "text": "Как переводится 'Apple'?",
+        "options": ["Яблоко", "Груша", "Хлеб", "Вода"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Выберите перевод: 'Хлеб'",
+        "options": ["Milk", "Bread", "Butter", "Cheese"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'I eat an apple'",
+        "options": ["Я", "ем", "яблоко", "хлеб", "пью", "воду"],
+        "correctIndex": -1,
+        "correctAnswer": "Я ем яблоко"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'Water is cold'",
+        "options": ["Вода", "холодная", "горячая", "Это", "свежая"],
+        "correctIndex": -1,
+        "correctAnswer": "Вода холодная"
+      },
+      {
+        "type": "fill",
+        "text": "I drink ___ (Молоко)",
+        "options": ["bread", "milk", "apple", "cheese"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Cheese'?",
+        "options": ["Мясо", "Сыр", "Молоко", "Сок"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Meat'?",
+        "options": ["Мясо", "Рыба", "Курица", "Яйцо"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'Мясо свежее'",
+        "options": ["The", "meat", "is", "fresh", "fish", "bad"],
+        "correctIndex": -1,
+        "correctAnswer": "The meat is fresh"
+      },
+      {
+        "type": "fill",
+        "text": "The ___ is good (Хлеб)",
+        "options": ["water", "apple", "meat", "bread"],
+        "correctIndex": 3,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'I eat bread and cheese'",
+        "options": ["Я", "ем", "хлеб", "и", "сыр", "пью", "или"],
+        "correctIndex": -1,
+        "correctAnswer": "Я ем хлеб и сыр"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Семья (Family)",
+    "description": "Мама, папа и другие",
+    "questions": [
+      {
+        "type": "word",
+        "text": "Как переводится 'Mother'?",
+        "options": ["Мама", "Сестра", "Бабушка", "Тетя"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Father'?",
+        "options": ["Брат", "Дядя", "Папа", "Дедушка"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Brother'?",
+        "options": ["Сестра", "Брат", "Дядя", "Дедушка"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Sister'?",
+        "options": ["Мама", "Тётя", "Сестра", "Бабушка"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "This is my ___ (Мама)",
+        "options": ["father", "mother", "sister", "brother"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "He is my ___ (Брат)",
+        "options": ["brother", "father", "uncle", "grandfather"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'Это моя мама'",
+        "options": ["This", "is", "my", "mother", "father", "sister"],
+        "correctIndex": -1,
+        "correctAnswer": "This is my mother"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'This is my father'",
+        "options": ["Это", "мой", "папа", "брат", "друг"],
+        "correctIndex": -1,
+        "correctAnswer": "Это мой папа"
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'У меня есть сестра'",
+        "options": ["I", "have", "a", "sister", "brother", "mother"],
+        "correctIndex": -1,
+        "correctAnswer": "I have a sister"
+      },
+      {
+        "type": "matching",
+        "text": "Найдите пары",
+        "options": [
+          "Mother", "Мама",
+          "Father", "Папа",
+          "Sister", "Сестра",
+          "Brother", "Брат"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Цвета (Colors)",
+    "description": "Основные цвета",
+    "questions": [
+      {
+        "type": "word",
+        "text": "Как переводится 'Red'?",
+        "options": ["Красный", "Синий", "Зелёный", "Жёлтый"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Выберите перевод: 'Синий'",
+        "options": ["Blue", "Green", "Black", "White"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Green'?",
+        "options": ["Жёлтый", "Красный", "Зелёный", "Чёрный"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'White'?",
+        "options": ["Белый", "Чёрный", "Серый", "Коричневый"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "The sky is ___ (Синий)",
+        "options": ["red", "blue", "yellow", "black"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "The grass is ___ (Зелёная)",
+        "options": ["red", "green", "white", "black"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The sun is yellow'",
+        "options": ["Солнце", "жёлтое", "красное", "небо", "синее"],
+        "correctIndex": -1,
+        "correctAnswer": "Солнце жёлтое"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'My car is black'",
+        "options": ["Моя", "машина", "чёрная", "красная", "белая"],
+        "correctIndex": -1,
+        "correctAnswer": "Моя машина чёрная"
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'Моё платье зелёное'",
+        "options": ["My", "dress", "is", "green", "blue", "red"],
+        "correctIndex": -1,
+        "correctAnswer": "My dress is green"
+      },
+      {
+        "type": "matching",
+        "text": "Соедините пары цветов",
+        "options": [
+          "Red", "Красный",
+          "Blue", "Синий",
+          "Green", "Зелёный",
+          "Yellow", "Жёлтый"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Дом (Home)",
+    "description": "Комнаты и предметы дома",
+    "questions": [
+      {
+        "type": "word",
+        "text": "Как переводится 'Room'?",
+        "options": ["Комната", "Кухня", "Кровать", "Окно"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Выберите перевод: 'Кровать'",
+        "options": ["Table", "Chair", "Bed", "Door"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Window'?",
+        "options": ["Дверь", "Стол", "Окно", "Стул"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Kitchen'?",
+        "options": ["Ванная", "Кухня", "Спальня", "Гараж"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "I am in the ___ (Кухня)",
+        "options": ["kitchen", "bedroom", "bathroom", "garden"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "Open the ___ (Дверь)",
+        "options": ["window", "door", "table", "bed"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'This is my room'",
+        "options": ["Это", "моя", "комната", "дом", "кухня"],
+        "correctIndex": -1,
+        "correctAnswer": "Это моя комната"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The door is closed'",
+        "options": ["Дверь", "закрыта", "открыта", "окно"],
+        "correctIndex": -1,
+        "correctAnswer": "Дверь закрыта"
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'Окно открыто'",
+        "options": ["The", "window", "is", "open", "door", "closed"],
+        "correctIndex": -1,
+        "correctAnswer": "The window is open"
+      },
+      {
+        "type": "matching",
+        "text": "Соедините пары слов",
+        "options": [
+          "Room", "Комната",
+          "Kitchen", "Кухня",
+          "Bed", "Кровать",
+          "Window", "Окно"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Контрольная 1 (Food & Family & Colors & Home)",
+    "description": "Проверка тем 1–4",
+    "questions": [
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'My mother cooks meat and vegetables'",
+        "options": ["Моя", "мама", "готовит", "мясо", "и", "овощи", "фрукты"],
+        "correctIndex": -1,
+        "correctAnswer": "Моя мама готовит мясо и овощи"
+      },
+      {
+        "type": "fill",
+        "text": "The bread and ___ are on the table (Сыр)",
+        "options": ["milk", "cheese", "water", "meat"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'Это мой отец'",
+        "options": ["This", "is", "my", "father", "mother", "sister"],
+        "correctIndex": -1,
+        "correctAnswer": "This is my father"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на английский: 'Моя комната красная и белая'",
+        "options": ["My", "room", "is", "red", "and", "white", "blue"],
+        "correctIndex": -1,
+        "correctAnswer": "My room is red and white"
+      },
+      {
+        "type": "fill",
+        "text": "I drink ___ (Вода)",
+        "options": ["water", "milk", "juice", "tea"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "This is my ___ (Брат)",
+        "options": ["sister", "brother", "father", "mother"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The window is green'",
+        "options": ["Окно", "зелёное", "красное", "маленькое"],
+        "correctIndex": -1,
+        "correctAnswer": "Окно зелёное"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на английский: 'Хлеб свежий'",
+        "options": ["The", "bread", "is", "fresh", "old", "bad"],
+        "correctIndex": -1,
+        "correctAnswer": "The bread is fresh"
+      },
+      {
+        "type": "matching",
+        "text": "Соедините пары слов",
+        "options": [
+          "Kitchen", "Кухня",
+          "Yellow", "Жёлтый",
+          "Father", "Папа",
+          "Cheese", "Сыр"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      },
+      {
+        "type": "matching",
+        "text": "Соедините еду и перевод",
+        "options": [
+          "Apple", "Яблоко",
+          "Bread", "Хлеб",
+          "Milk", "Молоко",
+          "Meat", "Мясо"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Школа (School)",
+    "description": "Школьные предметы и люди",
+    "questions": [
+      {
+        "type": "word",
+        "text": "Как переводится 'Teacher'?",
+        "options": ["Ученик", "Учитель", "Директор", "Друг"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Student'?",
+        "options": ["Учитель", "Студент", "Директор", "Друг"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Classroom'?",
+        "options": ["Библиотека", "Классная комната", "Столовая", "Дом"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Lesson'?",
+        "options": ["Домашка", "Перемена", "Урок", "Звонок"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "I am a ___ (Ученик)",
+        "options": ["teacher", "student", "father", "friend"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "We have an English ___ (Урок)",
+        "options": ["book", "lesson", "teacher", "desk"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The teacher is in the classroom'",
+        "options": ["Учитель", "в", "классной", "комнате", "доме", "кухне"],
+        "correctIndex": -1,
+        "correctAnswer": "Учитель в классной комнате"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The student reads a book'",
+        "options": ["Студент", "читает", "книгу", "пишет", "письмо"],
+        "correctIndex": -1,
+        "correctAnswer": "Студент читает книгу"
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'У нас есть урок английского'",
+        "options": ["We", "have", "an", "English", "lesson", "homework"],
+        "correctIndex": -1,
+        "correctAnswer": "We have an English lesson"
+      },
+      {
+        "type": "matching",
+        "text": "Соедините пары слов",
+        "options": [
+          "Teacher", "Учитель",
+          "Student", "Ученик",
+          "Classroom", "Классная комната",
+          "Lesson", "Урок"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Одежда (Clothes)",
+    "description": "Базовая одежда",
+    "questions": [
+      {
+        "type": "word",
+        "text": "Как переводится 'Shirt'?",
+        "options": ["Футболка", "Рубашка", "Пальто", "Штаны"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Coat'?",
+        "options": ["Юбка", "Пальто", "Платье", "Шляпа"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Shoes'?",
+        "options": ["Шляпа", "Обувь", "Носки", "Штаны"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Dress'?",
+        "options": ["Платье", "Пальто", "Рубашка", "Юбка"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "I wear ___ (Обувь)",
+        "options": ["shirt", "coat", "shoes", "hat"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "Put on your ___ (Пальто)",
+        "options": ["dress", "coat", "hat", "shirt"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'My coat is blue'",
+        "options": ["Моё", "пальто", "синее", "красное", "зелёное"],
+        "correctIndex": -1,
+        "correctAnswer": "Моё пальто синее"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'I have new shoes'",
+        "options": ["У", "меня", "есть", "новая", "обувь"],
+        "correctIndex": -1,
+        "correctAnswer": "У меня есть новая обувь"
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'Я люблю это платье'",
+        "options": ["I", "love", "this", "dress", "coat", "hat"],
+        "correctIndex": -1,
+        "correctAnswer": "I love this dress"
+      },
+      {
+        "type": "matching",
+        "text": "Соедините пары слов",
+        "options": [
+          "Shirt", "Рубашка",
+          "Coat", "Пальто",
+          "Dress", "Платье",
+          "Shoes", "Обувь"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Животные (Animals)",
+    "description": "Домашние и дикие животные",
+    "questions": [
+      {
+        "type": "word",
+        "text": "Как переводится 'Dog'?",
+        "options": ["Кошка", "Собака", "Птица", "Рыба"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Cat'?",
+        "options": ["Корова", "Лошадь", "Кошка", "Свинья"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Elephant'?",
+        "options": ["Слон", "Тигр", "Лиса", "Медведь"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Bird'?",
+        "options": ["Рыба", "Птица", "Собака", "Кот"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "The ___ is big (Слон)",
+        "options": ["dog", "cat", "elephant", "fish"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "The ___ is in the water (Рыба)",
+        "options": ["dog", "cat", "fish", "bird"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The cat is on the chair'",
+        "options": ["Кошка", "на", "стуле", "кровати", "столе"],
+        "correctIndex": -1,
+        "correctAnswer": "Кошка на стуле"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The dog is in the garden'",
+        "options": ["Собака", "в", "саду", "доме"],
+        "correctIndex": -1,
+        "correctAnswer": "Собака в саду"
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'У меня есть собака'",
+        "options": ["I", "have", "a", "dog", "cat", "fish"],
+        "correctIndex": -1,
+        "correctAnswer": "I have a dog"
+      },
+      {
+        "type": "matching",
+        "text": "Соедините пары слов",
+        "options": [
+          "Dog", "Собака",
+          "Cat", "Кошка",
+          "Fish", "Рыба",
+          "Bird", "Птица"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Путешествия (Travel)",
+    "description": "Транспорт и места",
+    "questions": [
+      {
+        "type": "word",
+        "text": "Как переводится 'Train'?",
+        "options": ["Самолёт", "Поезд", "Автобус", "Машина"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Bus'?",
+        "options": ["Автобус", "Поезд", "Самолёт", "Машина"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Airport'?",
+        "options": ["Вокзал", "Аэропорт", "Станция", "Мост"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "word",
+        "text": "Как переводится 'Station'?",
+        "options": ["Станция", "Улица", "Мост", "Река"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "We go to the ___ (Станция)",
+        "options": ["station", "airport", "school", "home"],
+        "correctIndex": 0,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "The plane is in the ___ (Аэропорт)",
+        "options": ["station", "airport", "city", "village"],
+        "correctIndex": 1,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The bus is late'",
+        "options": ["Автобус", "опаздывает", "ранний", "поезд", "домой"],
+        "correctIndex": -1,
+        "correctAnswer": "Автобус опаздывает"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'We are at the station'",
+        "options": ["Мы", "на", "станции", "доме", "аэропорту"],
+        "correctIndex": -1,
+        "correctAnswer": "Мы на станции"
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'Мы едем в город'",
+        "options": ["We", "go", "to", "the", "city", "village"],
+        "correctIndex": -1,
+        "correctAnswer": "We go to the city"
+      },
+      {
+        "type": "matching",
+        "text": "Соедините пары слов",
+        "options": [
+          "Train", "Поезд",
+          "Bus", "Автобус",
+          "Airport", "Аэропорт",
+          "Station", "Станция"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Контрольная 2 (All topics)",
+    "description": "Итоговая проверка тем 6–9 + повторение",
+    "questions": [
+      {
+        "type": "sentence",
+        "text": "Переведите на английский: 'Учитель в классной комнате'",
+        "options": ["The", "teacher", "is", "in", "the", "classroom", "home"],
+        "correctIndex": -1,
+        "correctAnswer": "The teacher is in the classroom"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'My dog is small and white'",
+        "options": ["Моя", "собака", "маленькая", "и", "белая", "чёрная"],
+        "correctIndex": -1,
+        "correctAnswer": "Моя собака маленькая и белая"
+      },
+      {
+        "type": "fill",
+        "text": "I wear a blue ___ (Рубашка)",
+        "options": ["coat", "hat", "shirt", "dress"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "fill",
+        "text": "We go to the ___ by train (Город)",
+        "options": ["village", "garden", "city", "school"],
+        "correctIndex": 2,
+        "correctAnswer": null
+      },
+      {
+        "type": "sentence",
+        "text": "Составьте фразу: 'Мы едем поездом в город'",
+        "options": ["We", "go", "to", "the", "city", "by", "train"],
+        "correctIndex": -1,
+        "correctAnswer": "We go to the city by train"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на английский: 'Мой дом большой и белый'",
+        "options": ["My", "house", "is", "big", "and", "white", "small"],
+        "correctIndex": -1,
+        "correctAnswer": "My house is big and white"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на русский: 'The coat is red and the shoes are black'",
+        "options": ["Пальто", "красное", "а", "обувь", "чёрная"],
+        "correctIndex": -1,
+        "correctAnswer": "Пальто красное, а обувь чёрная"
+      },
+      {
+        "type": "sentence",
+        "text": "Переведите на английский: 'У меня есть брат и сестра'",
+        "options": ["I", "have", "a", "brother", "and", "a", "sister"],
+        "correctIndex": -1,
+        "correctAnswer": "I have a brother and a sister"
+      },
+      {
+        "type": "matching",
+        "text": "Соедините пары слов",
+        "options": [
+          "Student", "Ученик",
+          "Coat", "Пальто",
+          "Airport", "Аэропорт",
+          "Elephant", "Слон"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      },
+      {
+        "type": "matching",
+        "text": "Соедините транспорт и места",
+        "options": [
+          "Train", "Поезд",
+          "Bus", "Автобус",
+          "House", "Дом",
+          "City", "Город"
+        ],
+        "correctIndex": -1,
+        "correctAnswer": null
+      }
+    ]
+  }
+]

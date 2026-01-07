@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Цвет фона поля ввода (чуть светлее основного фона) -->
+    <solid android:color="#34495E"/>
+
+    <!-- Сильное закругление (25dp) -->
+    <corners android:radius="25dp"/>
+
+    <!-- Отступы внутри, чтобы текст не прилипал (не всегда работает в shape, но полезно знать) -->
+    <padding android:left="16dp" android:right="16dp"/>
+</shape>

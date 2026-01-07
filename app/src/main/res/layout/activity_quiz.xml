@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2C3E50"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="85dp"> <!-- ИЗМЕНЕНО: БОЛЬШОЙ ОТСТУП СВЕРХУ -->
+
+    <!-- 1. ВЕРХ (Крестик + сердца + Прогресс) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"> <!-- ИЗМЕНЕНО: ОТОДВИНУЛ КОНТЕНТ ОТ ВЕРХА -->
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_toEndOf="@id/btn_close"
+            android:layout_marginStart="16dp"
+            android:layout_alignTop="@id/btn_close"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/bg_progress_bar" />
+
+        <LinearLayout
+            android:id="@+id/layout_hearts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/progress_bar"
+            android:layout_marginTop="8dp" />
+    </RelativeLayout>
+
+    <!-- 2. ТЕКСТ ВОПРОСА -->
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="32dp"
+        android:text="Вопрос..."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" /> <!-- ИЗМЕНЕНО: ТЕКСТ ПО ЦЕНТРУ -->
+
+    <!-- 3. ЦЕНТРАЛЬНАЯ ЧАСТЬ -->
+    <LinearLayout
+        android:id="@+id/layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"> <!-- ИЗМЕНЕНО: ЦЕНТРИРОВАНИЕ ПО ВЕРТИКАЛИ -->
+
+        <!-- РЕЖИМ 1: ПРЕДЛОЖЕНИЯ -->
+        <LinearLayout
+            android:id="@+id/container_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ваш ответ:"
+                android:textColor="#BDC3C7"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/layout_answer_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:background="@drawable/bg_button_white"
+                android:backgroundTint="#1AFFFFFF"
+                android:padding="16dp"
+                app:flexWrap="wrap"
+                android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#34495E"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/layout_word_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexWrap="wrap"
+                app:justifyContent="center"
+                app:alignContent="flex_start" />
+        </LinearLayout>
+
+        <!-- РЕЖИМ 2: КНОПКИ С ВАРИАНТАМИ ОТВЕТОВ -->
+        <LinearLayout
+            android:id="@+id/container_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="8dp"> <!-- ИЗМЕНЕНО: убрал лишние отступы сверху/снизу -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option_1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_button_white"
+                android:text="Option 1"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:elevation="4dp"/> <!-- ИЗМЕНЕНО: 8dp вместо 16dp -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option_2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_button_white"
+                android:text="Option 2"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:elevation="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option_3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_button_white"
+                android:text="Option 3"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:elevation="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option_4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_button_white"
+                android:text="Option 4"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:elevation="4dp"/>
+        </LinearLayout>
+
+
+        <!-- РЕЖИМ 3: ПАРЫ -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pairs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2" />
+
+    </LinearLayout>
+
+    <!-- 4. НИЖНИЕ КНОПКИ -->
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="ПРОВЕРИТЬ"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#2ECC71"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Продолжить"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2ECC71"
+        android:visibility="gone" />
+
+</LinearLayout>

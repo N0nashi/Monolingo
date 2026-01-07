@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Тень (темно-красная) -->
+    <item android:bottom="0dp" android:top="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <solid android:color="#B03A2E"/>
+        </shape>
+    </item>
+    <!-- Верх (ярко-красный) -->
+    <item android:bottom="4dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <solid android:color="#E74C3C"/>
+            <!-- Добавим белую обводку для контраста -->
+            <stroke android:width="2dp" android:color="#FFFFFF"/>
+        </shape>
+    </item>
+</layer-list>
